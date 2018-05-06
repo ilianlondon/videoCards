@@ -2,7 +2,7 @@
     "videocards": [
         {
             "image": "img/lista/ROG-strix-GTX1080-11gb.png",
-            "name": "ROG-STRIX-GTX1080TI",
+            "name": "ROG STRIX GTX 1080TI",
             "category": "NVIDIA Series",
             "gpu": "GeForce 1000 Series",
             "memory": "11Gb",
@@ -10,7 +10,7 @@
         },
         {
             "image": "img/lista/ROG-strix-GTX1060-6gb.png",
-            "name": "ROG-STRIX-GTX1060",
+            "name": "ROG-STRIX-GTX 1060",
             "category": "NVIDIA Series",
             "gpu": "GeForce 1000 Series",
             "memory": "6Gb",
@@ -25,12 +25,12 @@
             "price": 306        
         },
         {
-            "image": "img/lista/imagen.png",
-            "name": "ROG-STRIX-GTX1080TI",
-            "category": "NVIDIA Series",
-            "gpu": "GeForce 1000 Series",
-            "memory": "11Gb",
-            "price": 1060        
+            "image": "img/lista/ROG-strix-RadeonRX580-8gb.png",
+            "name": "AREZ STRIX RX VEGA'64",
+            "category": "AMD Series",
+            "gpu": "Radeon RX VEGA Series",
+            "memory": "8Gb",
+            "price": 856        
         },
         {
             "image": "img/lista/imagen.png",
