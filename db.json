@@ -1,0 +1,77 @@
+{
+    "videocards": [
+        {
+            "image": "img/lista/ROG-strix-GTX1080-11gb.png",
+            "name": "ROG-STRIX-GTX1080TI",
+            "category": "NVIDIA Series",
+            "gpu": "GeForce 1000 Series",
+            "memory": "11Gb",
+            "price": 1060        
+        },
+        {
+            "image": "img/lista/ROG-strix-GTX1060-6gb.png",
+            "name": "ROG-STRIX-GTX1060",
+            "category": "NVIDIA Series",
+            "gpu": "GeForce 1000 Series",
+            "memory": "6Gb",
+            "price": 380        
+        },
+        {
+            "image": "img/lista/AREZ-Expedition-RadeonRX570-8gb.png",
+            "name": "AREZ Expedition Radeon RX 570",
+            "category": "AMD Series",
+            "gpu": "Radeon RX 500 Series",
+            "memory": "8Gb",
+            "price": 306        
+        },
+        {
+            "image": "img/lista/imagen.png",
+            "name": "ROG-STRIX-GTX1080TI",
+            "category": "NVIDIA Series",
+            "gpu": "GeForce 1000 Series",
+            "memory": "11Gb",
+            "price": 1060        
+        },
+        {
+            "image": "img/lista/imagen.png",
+            "name": "ROG-STRIX-GTX1080TI",
+            "category": "NVIDIA Series",
+            "gpu": "GeForce 1000 Series",
+            "memory": "11Gb",
+            "price": 1060        
+        },
+        {
+            "image": "img/lista/imagen.png",
+            "name": "ROG-STRIX-GTX1080TI",
+            "category": "NVIDIA Series",
+            "gpu": "GeForce 1000 Series",
+            "memory": "11Gb",
+            "price": 1060        
+        },
+        {
+            "image": "img/lista/imagen.png",
+            "name": "ROG-STRIX-GTX1080TI",
+            "category": "NVIDIA Series",
+            "gpu": "GeForce 1000 Series",
+            "memory": "11Gb",
+            "price": 1060        
+        },
+        {
+            "image": "img/lista/imagen.png",
+            "name": "ROG-STRIX-GTX1080TI",
+            "category": "NVIDIA Series",
+            "gpu": "GeForce 1000 Series",
+            "memory": "11Gb",
+            "price": 1060        
+        },
+        {
+            "image": "img/lista/imagen.png",
+            "name": "ROG-STRIX-GTX1080TI",
+            "category": "NVIDIA Series",
+            "gpu": "GeForce 1000 Series",
+            "memory": "11Gb",
+            "price": 1060        
+        }
+    ]
+
+}
