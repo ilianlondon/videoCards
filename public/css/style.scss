@@ -318,7 +318,6 @@ header .menu {
             font-size: 15px;
             padding: 8% 0 2% 0;
         }
-        
         /* The container */
         .container {
             display: block;
@@ -447,9 +446,8 @@ header .menu {
             transform: rotate(45deg);
         }
     }
-
-    .memory-cont{
-        .memory{
+    .memory-cont {
+        .memory {
             font-weight: 600;
             font-size: 15px;
             padding: 4% 0 2% 0;
@@ -521,4 +519,68 @@ header .menu {
     width: 70%;
     float: right; //background: greenyellow;
     height: 500px;
+    background: #000000;
+    .list-products {
+        width: 100%;
+        height: 100vh;
+        float: left;
+        padding: 40px 0 0 20%;
+        .mostrar {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            .libro {
+                width: 20%;
+                background: $white;
+                margin: 20px;
+                border-radius: 6px;
+                box-shadow: 0px 0px 20px 0px rgba(20, 20, 20, 0.25);
+                .imagen {
+                    width: 100%;
+                    height: 100%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    border-radius: 6px 6PX;
+                }
+                .descri {
+                    padding: 20px;
+                    height: 8em;
+                    .nom {
+                        font-size: 20px;
+                        margin-bottom: 0.4em;
+                    }
+                }
+                .boton {
+                    margin: 10px 0;
+                    .add {
+                        margin: .5em 0;
+                        border: none;
+                        background: $rose;
+                        color: #f2f2f2;
+                        font-size: 10px;
+                        border-radius: 25px;
+                        position: relative;
+                        box-sizing: border-box;
+                        transition: all 500ms ease;
+                        padding: 1em 2em;
+                        overflow: hidden;
+                    }
+                    .more {
+                        margin: .5em 0;
+                        border: 1.5px solid $rose;
+                        background: $white;
+                        color: $rose;
+                        font-size: 10px;
+                        border-radius: 25px;
+                        position: relative;
+                        box-sizing: border-box;
+                        transition: all 500ms ease;
+                        padding: 1em 2em;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
 }
