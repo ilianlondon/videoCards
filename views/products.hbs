@@ -59,8 +59,12 @@
             <div class="category-cont">
                 <h3 class="category">Category</h3>
 
-                <label class="container">AMD Series
+                <label class="container">Todas
                     <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">AMD Series
+                    <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">NVIDIA Series
@@ -71,56 +75,48 @@
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Turbo Series
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Dual Series
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Expedition Series
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
+
 
             </div>
             <div class="gpu-cont">
                 <h3 class="gpu">GPU</h3>
-                <label class="container">Radeon™ RX VEGA Series
+                <label class="container">Todas
                     <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Radeon™ RX VEGA Series
+                    <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">Radeon™ RX 500 Series
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Radeon™ RX 400 Series
+                <label class="container">Radeon™ R7 Series
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Radeon™ R9 FURY Series
+                <label class="container">GeForce® 1080 Series
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">GeForce® 1000 Series
+                <label class="container">GeForce® 1060 Series
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">GeForce® 900 Series
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">GeForce® 700 Series
+                <label class="container">GeForce® 1050 Series
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
             </div>
             <div class="memory-cont">
                 <h3 class="memory">Video Memory</h3>
-
-                <label class="container">Above 8 Gb
+                <label class="container">Todas
                     <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Above 8 Gb
+                    <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">8 Gb
@@ -143,50 +139,48 @@
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">1 Gb
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Below 1 Gb
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
             </div>
         </div>
         <div class="content-products">
             <div class="sortby">
                 <div class="tit-sortby">
-
+                    <h4>Sort by</h4>
                 </div>
                 <div class="sort-select">
-
+                    <ul class="nav">
+				<li><a class="sortbytit" href="">Sort by <img src="src/down.png" alt="">
+                </a>
+					<ul>
+						<li><a class="byprice" href="">Price: Low - High</a></li>
+						<li><a class="byprice" href="">Price: High - Low</a></li>
+					</ul>
+				</li>
+			</ul>
                 </div>
             </div>
             <div class="list-products">
                 <div class="mostrar">
                     {{#each videocards}}
-                    <div class="libro" data-id="{{this._id}}">
+                    <div class="tarjeta" data-id="{{this._id}}">
                         <div class="imagen" style="background-image: url({{image}});"></div>
                         <div class="descri">
-                            <p class="nom">
-                                <b>{{name}}</b>
+                            <p class="nameDesc">
+                                {{name}}
                             </p>
-                            <p class="desc">
-                                Pages: {{paginas}}
+                            <p class="vidMem">
+                                <span>Video Memory:</span>  {{memory}}
                             </p>
-                            <p class="desc">
-                                Language: {{idioma}}
+                            <p class="gpuDesc">
+                               <span>GPU:</span>  {{gpu}}
                             </p>
-                            <p class="desc">
-                                ${{precio}}
+                            <p class="priceDesc">
+                                ${{price}}
                             </p>
-                            <p class="desc">
-                                Start: {{calificacion}}
-                            </p>
+                           
                         </div>
                         <div class="boton" align="center">
                             <a href="/producto/{{nombre}}'">
-                                <button class="more">Learn More...</button>
+                                <button class="more"> See More...</button>
                             </a>
                             <button class="add">Add To Card</button>
                         </div>
