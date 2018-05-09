@@ -131,10 +131,6 @@
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">3 Gb
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
                 <label class="container">2 Gb
                     <input type="checkbox">
                     <span class="checkmark"></span>
@@ -148,14 +144,20 @@
                 </div>
                 <div class="sort-select">
                     <ul class="nav">
-				<li><a class="sortbytit" href="">Sort by <img src="src/down.png" alt="">
-                </a>
-					<ul>
-						<li><a class="byprice" href="">Price: Low - High</a></li>
-						<li><a class="byprice" href="">Price: High - Low</a></li>
-					</ul>
-				</li>
-			</ul>
+                        <li>
+                            <a class="sortbytit" href="">Sort by
+                                <img src="src/down.png" alt="">
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="byprice" href="">Price: Low - High</a>
+                                </li>
+                                <li>
+                                    <a class="byprice" href="">Price: High - Low</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="list-products">
@@ -168,15 +170,15 @@
                                 {{name}}
                             </p>
                             <p class="vidMem">
-                                <span>Video Memory:</span>  {{memory}}
+                                <span>Video Memory:</span> {{memory}}
                             </p>
                             <p class="gpuDesc">
-                               <span>GPU:</span>  {{gpu}}
+                                <span>GPU:</span> {{gpu}}
                             </p>
                             <p class="priceDesc">
                                 ${{price}}
                             </p>
-                           
+
                         </div>
                         <div class="boton" align="center">
                             <a href="/producto/{{nombre}}'">
@@ -187,6 +189,7 @@
                     </div>
                     {{/each}}
                 </div>
+
             </div>
         </div>
     </section>

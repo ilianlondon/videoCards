@@ -420,7 +420,7 @@ header .menu {
         .container:hover input~.checkmark {
             background-color: #ccc;
         }
-        /* When the checkbox is checked, add a blue background */
+        /* When the checkbox is checked, add a gray background */
         .container input:checked~.checkmark {
             background-color: $darkGrayText;
         }
@@ -577,6 +577,7 @@ header .menu {
             flex-wrap: wrap;
             padding: 20px;
             background: $white;
+            transition: transform .2s;
             .tarjeta {
                 width: 26%;
                 height: 65vh;
@@ -662,6 +663,9 @@ header .menu {
                     }
                 }
             }
+        }
+        .mostrar:Hover{
+            transform: scale(1.2);
         }
     }
 }
