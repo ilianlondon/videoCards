@@ -1295,8 +1295,7 @@ textarea:focus {
         background: linear-gradient(to right, $GradientUno, $GradientDos, $GradientTres, $GradientCuatro, $GradientCinco);
     }
     .warranty {
-        width: 100%;
-        //height: 30vh;
+        width: 100%; //height: 30vh;
         padding: 0 0 3% 0;
         display: flex;
         flex-direction: column;
@@ -1304,7 +1303,6 @@ textarea:focus {
         align-content: center;
         align-items: flex-start;
         justify-content: center;
-        
         .warranty-support {
             width: 70%;
             padding: 3% 0 0 10%;
@@ -1331,6 +1329,193 @@ textarea:focus {
             justify-content: flex-start;
             align-content: stretch;
             align-items: center
+        }
+    }
+}
+
+//*****************************************************************************************************
+//*****************************************************************************************************
+//*****************************************************************************************************
+//************************************SHOPPING-CART*************************************************
+//*****************************************************************************************************
+//*****************************************************************************************************
+//*****************************************************************************************************
+.shopping-list {
+    width: 100%;
+    font-family: $fuente; //height: 80vh;
+    .shoppingCart-Title {
+        font-family: $fuente;
+        font-size: 2.2em;
+        font-weight: 600;
+        color: $black;
+        margin: 2% 0 2% 10%;
+    }
+    .resume-list-product {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: flex-start;
+        width: 100%;
+        .photo-product-list {
+            width: 20%;
+            margin: 0 5% 2% 10%;
+            float: left;
+            display: flex;
+        }
+        .description-list {
+            width: 80%;
+            padding: 0 10% 0 2%;
+            .name-product-list {
+                width: 100%;
+                font-size: 1.2em;
+            }
+            .ref-product-list {
+                width: 100%;
+                font-size: 0.8em;
+                padding: 0.5% 0;
+            }
+            .price-individual-list {
+                width: 100%;
+                font-size: 1.2em;
+                color: $red;
+                padding: 1.5% 0;
+                font-weight: 600;
+            }
+            .description-resume-list {
+                width: 100%;
+                text-align: justify;
+                font-size: 1em;
+                padding: 2% 0;
+            }
+        }
+    }
+    .divide-list {
+        width: 80%;
+        height: 1px;
+        margin: 1% 10% 3% 10%;
+        background: linear-gradient(to right, $GradientUno, $GradientDos, $GradientTres, $GradientCuatro, $GradientCinco);
+    }
+}
+
+.cont-checkout-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    padding: 5.5%;
+    background: $red;
+    .subtotal-cont {
+        font-family: $fuente;
+        width: 50%;
+        padding: 5%;
+        background: rgba($color: $white, $alpha: 0.6);;
+        
+        .info-check {
+            width: 100%;
+           display: flex;
+           flex-direction: row;
+           flex-wrap: nowrap;
+           justify-content: center;
+           align-content: center;
+           align-items: center;
+         
+            .text-info-checkout {
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
+                h1 {
+                    width: 50%;
+                    color: $black;
+                    font-size: 1.5em;
+                    font-weight: 500;
+                }
+                h2 {
+                    width: 50%;
+                    
+                    color: $red;
+                    text-align: end;
+                    font-size: 1.5em;
+                    font-weight: 600;
+                }
+            }
+        }
+        .check-cont {
+            display: flex;
+            align-items: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5%;
+            flex-wrap: wrap;
+            width: 100%;
+            text-align: center;
+            button {
+                border: 0;
+                box-sizing: border-box;
+                margin: 1.6em 0 0.6em 0;
+                padding: 1em 2em;
+                border-style: none;
+                box-shadow: inset 0 0 0 2px $white;
+                color: $red;
+                font-size: inherit;
+                font-weight: 700;
+                position: relative;
+                vertical-align: middle;
+                &::before,
+                &::after {
+                    box-sizing: inherit;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .bot-check {
+                background: rgba($color: $lightGray, $alpha: 0.5);
+                border: 0;
+                box-sizing: border-box;
+                transition: color 0.25s;
+                &::before,
+                &::after {
+                    border: 2px solid transparent;
+                    width: 0;
+                    height: 0;
+                }
+                &::before {
+                    top: 0;
+                    left: 0;
+                }
+                &::after {
+                    bottom: 0;
+                    right: 0;
+                }
+                &:hover {
+                    color: $darkGrayText;
+                    box-shadow: inset 0 0 0 2px transparent;
+                    transition: 2.5s;
+                }
+                &:hover::before,
+                &:hover::after {
+                    width: 100%;
+                    height: 100%;
+                }
+                &:hover::before {
+                    border-image: linear-gradient(to Right, $GradientUno, $GradientDos, $GradientTres) 10 10 0 0;
+                    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+                }
+                &:hover::after {
+                    border-image: linear-gradient(to Left, $GradientCuatro, $GradientCinco, $GradientSeis) 0 0 10 10;
+                    transition: border-color 0s ease-out 0.3s, width 0.15s ease-out 0.3s, height 0.15s ease-out 0.6s;
+                }
+            }
         }
     }
 }
