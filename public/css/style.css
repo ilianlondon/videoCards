@@ -1273,7 +1273,8 @@ ol {
   background: linear-gradient(to right, #FF0000, #FFFF00, #00FF00, #00FFDE, #FF00FF);
 }
 
-input[type=text], textarea {
+input[type=text],
+textarea {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
@@ -1284,10 +1285,144 @@ input[type=text], textarea {
   border: 1px solid #DDDDDD;
 }
 
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus,
+textarea:focus {
   box-shadow: 0 0 5px #CC0000;
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
   border: 1px solid #CC0000;
+}
+
+.product {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 3% 0;
+  /*
+    .cont-specifications{
+        .specificationsTitle{
+
+        }
+
+        .technicalDetails{
+
+        }
+        .table-specifications{
+
+        }
+    }
+    */
+}
+
+.product .resume {
+  width: 100%;
+  height: 30vh;
+}
+
+.product .resume .cont-photo-product {
+  width: 35%;
+  padding-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.product .resume .cont-photo-product .photo-product {
+  width: 100%;
+}
+
+.product .resume .description {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  padding: 0 10% 0 5%;
+}
+
+.product .resume .description .name-product {
+  width: 100%;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.product .resume .description .ref-product {
+  width: 100%;
+  font-size: 1.2m;
+  font-weight: 500;
+}
+
+.product .resume .description .price-individual {
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #CC0000;
+}
+
+.product .resume .description .description-resume {
+  width: 100%;
+  text-align: justify;
+  color: #4f4f4f;
+  padding: 5% 0 4% 0;
+}
+
+.product .resume .description .addToCart {
+  border: none;
+  background: #960000;
+  color: #f2f2f2;
+  font-size: 14px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  padding: 1em 2.5em;
+  overflow: hidden;
+}
+
+.product .divide-warranty {
+  width: 80%;
+  height: 1px;
+  margin: 10% 10% 2% 10%;
+  background: linear-gradient(to right, #FF0000, #FFFF00, #00FF00, #00FFDE, #FF00FF);
+}
+
+.product .warranty {
+  width: 100%;
+  padding: 0 0 3% 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product .warranty .warranty-support {
+  width: 70%;
+  padding: 3% 0 0 10%;
+  color: #CC0000;
+  font-size: 1.5em;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.product .warranty .warranty-description {
+  width: 100%;
+  padding: 3% 10%;
+  color: #4f4f4f;
+  text-align: justify;
+  font-size: 1em;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
