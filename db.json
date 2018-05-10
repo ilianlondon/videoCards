@@ -10,7 +10,7 @@
         },
         {
             "image": "img/lista/ROG-strix-GTX1060-6gb.png",
-            "name": "ROG-STRIX-GTX 1060",
+            "name": "ROG STRIX GTX 1060",
             "category": "NVIDIA Series",
             "gpu": "GeForce 1000 Series",
             "memory": "6Gb",
@@ -65,7 +65,7 @@
             "price": 530        
         },
         {
-            "image": "img/lista/ASUS-Turbo GeForce-GTX1060-6gb.png",
+            "image": "img/lista/ASUS-Turbo-GeForce-GTX1060-6gb.png",
             "name": "ROG-STRIX-GTX1080TI",
             "category": "NVIDIA Series",
             "gpu": "GeForce 1000 Series",

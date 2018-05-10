@@ -220,9 +220,23 @@ header .menu .logo img {
 .route {
   width: 100%;
   margin-top: 55px;
-  height: 2.5vw;
-  background: linear-gradient(#CC0000, #630101);
+  height: 2.2vw;
+  border-bottom: 2px solid #960000;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+}
+
+.route p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  padding-left: 10%;
+  font-weight: 400;
+  color: #4f4f4f;
 }
 
 .productos {
@@ -387,7 +401,7 @@ header .menu .logo img {
   /* Hide the browser's default checkbox */
   /* Create a custom checkbox */
   /* On mouse-over, add a grey background color */
-  /* When the checkbox is checked, add a blue background */
+  /* When the checkbox is checked, add a gray background */
   /* Create the checkmark/indicator (hidden when not checked) */
   /* Show the checkmark when checked */
   /* Style the checkmark/indicator */
@@ -538,6 +552,7 @@ header .menu .logo img {
 
 .content-products {
   width: 70%;
+  right: 0;
   float: right;
 }
 
@@ -606,17 +621,18 @@ header .menu .logo img {
 }
 
 .content-products .list-products .mostrar .tarjeta {
-  width: 26%;
-  height: 65vh;
+  width: 220px;
+  height: 500px;
   background: #ffffff;
   margin: 3%;
+  transition: transform .2s;
   border-radius: 6px;
   box-shadow: 0px 0px 20px 0px rgba(20, 20, 20, 0.25);
 }
 
 .content-products .list-products .mostrar .tarjeta .imagen {
-  width: 100%;
-  height: 57%;
+  width: 220px;
+  height: 220px;
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 6px 6px 0 0;
@@ -691,16 +707,8 @@ header .menu .logo img {
   overflow: hidden;
 }
 
-.content-products .list-products .mostrar .tarjeta .boton .more {
-  border: 1.5px solid #960000;
-  background: #ffffff;
-  color: #960000;
-  font-size: 14px;
-  position: relative;
-  box-sizing: border-box;
-  transition: all 500ms ease;
-  padding: 1em 2.5em;
-  overflow: hidden;
+.content-products .list-products .tarjeta:Hover {
+  transform: scale(1.1);
 }
 
 ul,
@@ -786,5 +794,482 @@ ol {
 .sortbytit:hover::after {
   border-image: linear-gradient(to Left, #00FFDE, #FF00FF, #FF0000) 0 0 10 10;
   transition: border-color 0s ease-out 0.3s, width 0.15s ease-out 0.3s, height 0.15s ease-out 0.6s;
+}
+
+.form {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+.form .check-tit-cont {
+  background: #CC0000;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.form .check-tit-cont h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.form .cont-billingAddress {
+  width: 50%;
+  display: flex;
+  padding: 5% 5% 0 10%;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.form .cont-billingAddress .billingAddress {
+  width: 100%;
+  color: #CC0000;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 0 8% 0;
+}
+
+.form .cont-billingAddress .name-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.form .cont-billingAddress .name-form h3 {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 5% 0 3% 0;
+  color: #4f4f4f;
+}
+
+.form .cont-billingAddress .name-form input {
+  height: 30px;
+  width: 215px;
+  background: #e7e7e7;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding-left: 5%;
+}
+
+.form .cont-billingAddress .email-number-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.form .cont-billingAddress .email-number-form h3 {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 5% 0 3% 0;
+  color: #4f4f4f;
+}
+
+.form .cont-billingAddress .email-number-form input {
+  height: 30px;
+  width: 215px;
+  background: #e7e7e7;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding-left: 5%;
+}
+
+.form .cont-billingAddress .country-cont {
+  width: 100%;
+}
+
+.form .cont-billingAddress .country-cont h3 {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 3% 0 2% 0;
+  color: #4f4f4f;
+}
+
+.form .cont-billingAddress .country-cont input {
+  height: 30px;
+  width: 100%;
+  background: #e7e7e7;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding-left: 5%;
+}
+
+.form .cont-billingAddress .address-cont {
+  width: 100%;
+}
+
+.form .cont-billingAddress .address-cont h3 {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 3% 0 2% 0;
+  color: #4f4f4f;
+}
+
+.form .cont-billingAddress .address-cont input {
+  height: 30px;
+  width: 100%;
+  background: #e7e7e7;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding-left: 5%;
+}
+
+.form .cont-billingAddress .location-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.form .cont-billingAddress .location-form h3 {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 5% 0 3% 0;
+  color: #4f4f4f;
+}
+
+.form .cont-billingAddress .location-form input {
+  height: 30px;
+  width: 215px;
+  background: #e7e7e7;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding-left: 5%;
+}
+
+.form .cont-billingAddress .orderNote-cont {
+  width: 100%;
+}
+
+.form .cont-billingAddress .orderNote-cont h3 {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 3% 0 2% 0;
+  color: #4f4f4f;
+}
+
+.form .cont-billingAddress .orderNote-cont textarea {
+  width: 100%;
+  background: #e7e7e7;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding-left: 5%;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  resize: none;
+  color: #4f4f4f;
+}
+
+.form .cont-count {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  padding: 5% 10% 0 0;
+}
+
+.form .cont-count .login {
+  width: 100%;
+}
+
+.form .cont-count .login .loginTitle {
+  width: 100%;
+  color: #CC0000;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 0 5% 0;
+}
+
+.form .cont-count .login .registered {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.form .cont-count .login .log {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.form .cont-count .login .emailAddress {
+  width: 50%;
+  display: flex;
+  padding: 2% 0 0 0;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.form .cont-count .login .emailAddress h4 {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 3% 0 3% 0;
+  color: #4f4f4f;
+}
+
+.form .cont-count .login .emailAddress h4 span {
+  color: #CC0000;
+  font-weight: 700;
+}
+
+.form .cont-count .login .emailAddress input {
+  height: 25px;
+  width: 220px;
+  background: #e7e7e7;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.form .cont-count .login .password {
+  width: 50%;
+  display: flex;
+  padding: 2% 0 0 0;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.form .cont-count .login .password h4 {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 3% 0 3% 0;
+  color: #4f4f4f;
+}
+
+.form .cont-count .login .password h4 span {
+  color: #CC0000;
+  font-weight: 700;
+}
+
+.form .cont-count .login .password input {
+  height: 25px;
+  width: 220px;
+  background: #e7e7e7;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.form .cont-count .login .login-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.form .cont-count .login .login-cont h4 {
+  font-size: 0.7em;
+  font-weight: 500;
+  padding: 2% 0 3% 0;
+  color: #CC0000;
+}
+
+.form .cont-count .login .login-cont h4 span {
+  color: #CC0000;
+  font-weight: 700;
+}
+
+.form .cont-count .login .login-cont .loginbut {
+  border: none;
+  background: #960000;
+  color: #f2f2f2;
+  font-size: 14px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  padding: 0.5em 2.5em;
+  margin: 3% 7% 0 0;
+  overflow: hidden;
+}
+
+.form .cont-count .order {
+  width: 100%;
+}
+
+.form .cont-count .order .orderTitle {
+  width: 100%;
+  text-align: center;
+  color: #CC0000;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 2% 0;
+}
+
+.form .cont-count .order .productsSubtitle {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 3% 0 2% 0;
+  color: #000000;
+}
+
+.form .cont-count .order .prodOrder .infoProductOrder-Cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: left;
+  align-content: stretch;
+  align-items: center;
+}
+
+.form .cont-count .order .prodOrder .infoProductOrder-Cont .imgProduct-order {
+  width: 100px;
+  height: 100px;
+}
+
+.form .cont-count .order .prodOrder .infoProductOrder-Cont .infoProductOrder {
+  padding-left: 5%;
+  width: 400px;
+}
+
+.form .cont-count .order .prodOrder .infoProductOrder-Cont .infoProductOrder .titleProductOrder {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 3% 0 1% 0;
+  color: #000000;
+}
+
+.form .cont-count .order .prodOrder .infoProductOrder-Cont .infoProductOrder .priceProductOrder {
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1% 0 2% 0;
+  color: #CC0000;
+}
+
+.form .cont-count .total {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.form .cont-count .total .subtotal-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  padding: 0 0 3% 0;
+}
+
+.form .cont-count .total .subtotal-cont .subtotal {
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000;
+  width: 50%;
+}
+
+.form .cont-count .total .subtotal-cont .subtotalPrice {
+  font-size: 1em;
+  font-weight: 600;
+  color: #000000;
+  width: 50%;
+  text-align: end;
+}
+
+.form .cont-count .total .shipping-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  padding: 0 0 3% 0;
+}
+
+.form .cont-count .total .shipping-cont .shipping {
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000;
+  width: 50%;
+}
+
+.form .cont-count .total .shipping-cont .shippingPrice {
+  font-size: 1em;
+  font-weight: 600;
+  color: #000000;
+  width: 50%;
+  text-align: end;
+}
+
+.form .cont-count .total .order-total-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  padding: 0 0 3% 0;
+}
+
+.form .cont-count .total .order-total-cont .order-total {
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000;
+  width: 50%;
+}
+
+.form .cont-count .total .order-total-cont .order-totalPrice {
+  font-size: 1em;
+  font-weight: 600;
+  color: #000000;
+  width: 50%;
+  text-align: end;
+}
+
+.form .cont-count .total .pay-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.form .cont-count .total .pay-cont .pay {
+  border: none;
+  background: #960000;
+  color: #f2f2f2;
+  font-size: 14px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  padding: 0.5em 2.5em;
+  overflow: hidden;
+}
+
+.divide {
+  width: 100%;
+  height: 1px;
+  margin: 5% 0;
+  background: linear-gradient(to right, #FF0000, #FFFF00, #00FF00, #00FFDE, #FF00FF);
 }
 /*# sourceMappingURL=style.css.map */
