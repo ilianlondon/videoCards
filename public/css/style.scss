@@ -223,6 +223,44 @@ header .menu {
     }
 }
 
+#carri {
+    color: white;
+    background: $red;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.3em;
+    position: relative;
+    top: -18px;
+    left: -10px;
+}
+
+#carriuno {
+    color: white;
+    background: $red;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 1.3em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.3em;
+    position: relative;
+    top: -14px;
+    left: -40px;
+}
+
 /* Efectos del MENU */
 
 .headroom {
@@ -255,6 +293,10 @@ header .menu {
         padding-left: 10%;
         font-weight: 400;
         color: $darkGrayText;
+
+        a{
+            text-decoration: none;
+        }
     }
 }
 
@@ -275,56 +317,152 @@ header .menu {
         font-weight: 600;
     }
     .pricerange-cont {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
         .price {
             margin: 8% 0 5% 0;
+            width: 100%;
             font-size: 15px;
             font-weight: 600;
         }
-        #range {
-            width: 38%;
-        }
-        .input[type=range] {
-            -webkit-appearance: none;
-        }
-        .input[type=range]::-webkit-slider-runnable-track {
-            width: 300px;
-            height: 5px;
-            background: $lightGray;
-            border: none;
-            border-radius: 6px;
-        }
-        .input[type=range]::-webkit-slider-thumb {
-            -webkit-appearance: none; //border: none;
-            height: 16px;
-            width: 16px;
-            border-radius: 60%;
-            background: $red;
-            margin-top: -4px;
-        }
-        input[type=range]:focus {
-            outline: none;
-        }
-        input[type=range]:focus::-webkit-slider-runnable-track {
-            background: $darkGrayText;
-        }
-        .input-ranges-cont {
-            padding-top: 3%;
-            input {
-                width: 100px;
-                height: 25px;
-                padding: 0 1.5% 0 1.5%;
-                border: 1px solid $red;
+        .cont-slider-apply{
+            display: flex;
+                align-items: center;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                text-align: center;
+            .cont-slider{
+                display: flex;
+                align-items: center;
+                align-items: center;
+                justify-content: center;
+                padding-top: 5%;
+                flex-wrap: wrap;
+                width: 100%;
+                text-align: center;
+                #range {
+                    width: 38%;
+                }
+                .input[type=range] {
+                    -webkit-appearance: none;
+                }
+                .input[type=range]::-webkit-slider-runnable-track {
+                    width: 300px;
+                    height: 5px;
+                    background: $lightGray;
+                    border: none;
+                    border-radius: 6px;
+                }
+                .input[type=range]::-webkit-slider-thumb {
+                    -webkit-appearance: none; //border: none;
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 60%;
+                    background: $red;
+                    margin-top: -4px;
+                }
+                input[type=range]:focus {
+                    outline: none;
+                }
+                input[type=range]:focus::-webkit-slider-runnable-track {
+                    background: $darkGrayText;
+                }
+                .input-ranges-cont {
+                    padding-top: 3%;
+                    input {
+                        width: 100px;
+                        height: 25px;
+                        padding: 0 1.5% 0 1.5%;
+                        border: 1px solid $red;
+                    }
+                    ::placeholder {
+                        font-size: 13px;
+                        color: $darkGrayText;
+                    }
+                    span {
+                        margin: 0 4% 0 4%;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
             }
-            ::placeholder {
-                font-size: 13px;
-                color: $darkGrayText;
-            }
-            span {
-                margin: 0 4% 0 4%;
-                font-size: 14px;
-                font-weight: 500;
+            .cont-apply {
+                display: flex;
+                align-items: center;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                text-align: center;
+                button {
+                    border: 0;
+                    box-sizing: border-box;
+                    margin: 1.6em 0 0.6em 0;
+                    padding: 1em 2em;
+                    border-style: none;
+                    box-shadow: inset 0 0 0 2px $white;
+                    color: $white;
+                    font-size: inherit;
+                    font-weight: 700;
+                    position: relative;
+                    vertical-align: middle;
+                    &::before,
+                    &::after {
+                        box-sizing: inherit;
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .minMax {
+                    background: rgba($color: $red, $alpha: 1);
+                    border: 0;
+                    box-sizing: border-box;
+                    transition: color 0.25s;
+                    &::before,
+                    &::after {
+                        border: 2px solid transparent;
+                        width: 0;
+                        height: 0;
+                    }
+                    &::before {
+                        top: 0;
+                        left: 0;
+                    }
+                    &::after {
+                        bottom: 0;
+                        right: 0;
+                    }
+                    &:hover {
+                        color: $red;
+                        background: white;
+                        box-shadow: inset 0 0 0 2px transparent;
+                        transition: 1s;
+                    }
+                    &:hover::before,
+                    &:hover::after {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover::before {
+                        border-image: linear-gradient(to Right, $GradientUno, $GradientDos, $GradientTres) 10 10 0 0;
+                        transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+                    }
+                    &:hover::after {
+                        border-image: linear-gradient(to Left, $GradientCuatro, $GradientCinco, $GradientSeis) 0 0 10 10;
+                        transition: border-color 0s ease-out 0.3s, width 0.15s ease-out 0.3s, height 0.15s ease-out 0.6s;
+                    }
+                }
             }
         }
+        
     }
     .category-cont {
         .category {
@@ -593,6 +731,7 @@ header .menu {
                 width: 220px;
                 height: 500px;
                 background: $white;
+                position: relative;
                 margin: 3%;
                 transition: transform .2s;
                 border-radius: 6px;
@@ -641,26 +780,75 @@ header .menu {
                     }
                 }
                 .boton {
-                    margin: 3% 0;
                     display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-content: stretch;
+                    position: absolute;
+                    bottom: 3%;
                     align-items: center;
-                    a {
-                        text-decoration: none;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 5%;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    text-align: center;
+                    button {
+                        border: 0;
+                        box-sizing: border-box;
+                        margin: 1.6em 0 0.6em 0;
+                        padding: 1em 2em;
+                        border-style: none;
+                        box-shadow: inset 0 0 0 2px $white;
+                        color: $white;
+                        font-size: inherit;
+                        font-weight: 700;
+                        position: relative;
+                        vertical-align: middle;
+                        &::before,
+                        &::after {
+                            box-sizing: inherit;
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                     .add {
-                        border: none;
-                        background: $darkRed;
-                        color: #f2f2f2;
-                        font-size: 14px;
-                        position: relative;
+                        background: rgba($color: $red, $alpha: 1);
+                        border: 0;
                         box-sizing: border-box;
-                        transition: all 500ms ease;
-                        padding: 1em 2.5em;
-                        overflow: hidden;
+                        transition: color 0.25s;
+                        &::before,
+                        &::after {
+                            border: 2px solid transparent;
+                            width: 0;
+                            height: 0;
+                        }
+                        &::before {
+                            top: 0;
+                            left: 0;
+                        }
+                        &::after {
+                            bottom: 0;
+                            right: 0;
+                        }
+                        &:hover {
+                            color: $red;
+                            background: white;
+                            box-shadow: inset 0 0 0 2px transparent;
+                            transition: 1s;
+                        }
+                        &:hover::before,
+                        &:hover::after {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &:hover::before {
+                            border-image: linear-gradient(to Right, $GradientUno, $GradientDos, $GradientTres) 10 10 0 0;
+                            transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+                        }
+                        &:hover::after {
+                            border-image: linear-gradient(to Left, $GradientCuatro, $GradientCinco, $GradientSeis) 0 0 10 10;
+                            transition: border-color 0s ease-out 0.3s, width 0.15s ease-out 0.3s, height 0.15s ease-out 0.6s;
+                        }
                     }
                 }
             }
@@ -670,18 +858,18 @@ header .menu {
         }
     }
 }
-.container{
-    a{
+
+.container {
+    a {
         text-decoration: none;
     }
-   
 }
-.mostrar{
-    a{
+
+.mostrar {
+    a {
         text-decoration: none;
         color: $darkGray;
     }
-   
 }
 
 ul,
@@ -798,8 +986,9 @@ ol {
     .cont-billingAddress {
         width: 50%;
         display: flex;
-        padding: 5% 5% 0 10%;
+        padding: 4% 5% 0 10%;
         flex-wrap: wrap;
+        position: fixed;
         float: left;
         .billingAddress {
             width: 100%;
@@ -936,11 +1125,11 @@ ol {
         }
     }
     .cont-count {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         float: left;
-        padding: 5% 10% 0 0;
+        padding: 5% 10% 0 50%;
         .login {
             width: 100%;
             .loginTitle {
@@ -1049,41 +1238,75 @@ ol {
                 color: $red;
                 font-size: 18px;
                 font-weight: 600;
-                padding: 2% 0;
+                padding: 1% 0;
             }
             .productsSubtitle {
                 font-size: 1em;
                 font-weight: 600;
-                padding: 3% 0 2% 0;
+                padding: 4% 0 0 0;
                 color: $black;
             }
             .prodOrder {
-                .infoProductOrder-Cont {
-                    width: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    float: left;
-                    justify-content: left;
-                    align-content: stretch;
-                    align-items: center;
-                    .imgProduct-order {
-                        width: 100px;
-                        height: 100px;
-                    }
-                    .infoProductOrder {
-                        padding-left: 5%;
-                        width: 400px;
-                        .titleProductOrder {
-                            font-size: 1em;
-                            font-weight: 600;
-                            padding: 3% 0 1% 0;
-                            color: $black;
+                .lista {
+                    .tarjeta-check {
+                        width: 100%;
+                        .cont-tarjeta-check {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            justify-content: flex-start;
+                            align-content: stretch;
+                            align-items: center;
+                            .img-tarjeta-check {
+                                width: 20%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .continfo {
+                                width: 60%;
+                                padding: 1em;
+                                .name-check {
+                                    width: 140%;
+                                    font-size: 1.2em;
+                                    font-weight: 500;
+                                    padding-bottom: 0.3em;
+                                }
+                                .price-check {
+                                    color: $red;
+                                    font-weight: 600;
+                                }
+                            }
                         }
-                        .priceProductOrder {
-                            font-size: 1em;
-                            font-weight: 700;
-                            padding: 1% 0 2% 0;
-                            color: $red;
+                    }
+                    .infoProductOrder-Cont {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        float: left;
+                        justify-content: left;
+                        align-content: stretch;
+                        align-items: center;
+                        .imgProduct-order {
+                            width: 100px;
+                            height: 100px;
+                        }
+                        .infoProductOrder {
+                            padding-left: 5%;
+                            width: 400px;
+                            .titleProductOrder {
+                                font-size: 1em;
+                                font-weight: 600;
+                                padding: 3% 0 1% 0;
+                                color: $black;
+                            }
+                            .priceProductOrder {
+                                font-size: 1em;
+                                font-weight: 700;
+                                padding: 1% 0 2% 0;
+                                color: $red;
+                            }
                         }
                     }
                 }
@@ -1167,23 +1390,73 @@ ol {
                 }
             }
             .pay-cont {
-                width: 100%;
                 display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: center;
-                align-content: stretch;
                 align-items: center;
-                .pay {
-                    border: none;
-                    background: $darkRed;
-                    color: #f2f2f2;
-                    font-size: 14px;
-                    position: relative;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                text-align: center;
+                padding-bottom: 8%;
+                button {
+                    border: 0;
                     box-sizing: border-box;
-                    transition: all 500ms ease;
-                    padding: 0.5em 2.5em;
-                    overflow: hidden;
+                    margin: 1.6em 0 0.6em 0;
+                    padding: 1em 2em;
+                    border-style: none;
+                    box-shadow: inset 0 0 0 2px $white;
+                    color: $white;
+                    font-size: inherit;
+                    font-weight: 700;
+                    position: relative;
+                    vertical-align: middle;
+                    &::before,
+                    &::after {
+                        box-sizing: inherit;
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .pay {
+                    background: rgba($color: $red, $alpha: 1);
+                    border: 0;
+                    box-sizing: border-box;
+                    transition: color 0.25s;
+                    &::before,
+                    &::after {
+                        border: 2px solid transparent;
+                        width: 0;
+                        height: 0;
+                    }
+                    &::before {
+                        top: 0;
+                        left: 0;
+                    }
+                    &::after {
+                        bottom: 0;
+                        right: 0;
+                    }
+                    &:hover {
+                        color: $red;
+                        background: white;
+                        box-shadow: inset 0 0 0 2px transparent;
+                        transition: 1s;
+                    }
+                    &:hover::before,
+                    &:hover::after {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover::before {
+                        border-image: linear-gradient(to Right, $GradientUno, $GradientDos, $GradientTres) 10 10 0 0;
+                        transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+                    }
+                    &:hover::after {
+                        border-image: linear-gradient(to Left, $GradientCuatro, $GradientCinco, $GradientSeis) 0 0 10 10;
+                        transition: border-color 0s ease-out 0.3s, width 0.15s ease-out 0.3s, height 0.15s ease-out 0.6s;
+                    }
                 }
             }
         }
@@ -1194,6 +1467,13 @@ ol {
     width: 100%;
     height: 1px;
     margin: 5% 0;
+    background: linear-gradient(to right, $GradientUno, $GradientDos, $GradientTres, $GradientCuatro, $GradientCinco);
+}
+
+.divide-prod-check {
+    width: 100%;
+    height: 1px;
+    margin: 2% 0;
     background: linear-gradient(to right, $GradientUno, $GradientDos, $GradientTres, $GradientCuatro, $GradientCinco);
 }
 
@@ -1412,7 +1692,7 @@ textarea:focus {
     }
 }
 
-.cont-checkout-info{
+.cont-checkout-info {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1426,17 +1706,16 @@ textarea:focus {
         font-family: $fuente;
         width: 50%;
         padding: 5%;
-        background: rgba($color: $white, $alpha: 0.6);;
-        
+        background: rgba($color: $white, $alpha: 0.6);
+        ;
         .info-check {
             width: 100%;
-           display: flex;
-           flex-direction: row;
-           flex-wrap: nowrap;
-           justify-content: center;
-           align-content: center;
-           align-items: center;
-         
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
             .text-info-checkout {
                 width: 70%;
                 display: flex;
@@ -1453,7 +1732,6 @@ textarea:focus {
                 }
                 h2 {
                     width: 50%;
-                    
                     color: $red;
                     text-align: end;
                     font-size: 1.5em;
@@ -1532,3 +1810,4 @@ textarea:focus {
         }
     }
 }
+

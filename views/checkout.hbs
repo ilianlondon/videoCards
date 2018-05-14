@@ -14,14 +14,14 @@
         <nav class="menu">
             <div class="logo">
                 <img src="src/rog-strix.png" alt="ROG Strix">
-                <a href="#" class="btn-menu" id="btn-menu">
+                <a href="/" class="btn-menu" id="btn-menu">
                     <i class="icono fa fa-bars" aria-hidden="true">
                     </i>
                 </a>
             </div>
 
             <div class="enlaces" id="enlaces">
-                <a class="products" href="#">Products</a>
+                <a class="products" href="/">Products</a>
                 <a class="ROG" href="#">ROG</a>
                 <a class="Service" href="#">Service</a>
             </div>
@@ -34,16 +34,16 @@
                         </a>
 
                     </div>
-                    <a class="tienda" href="\views\shopping_cart.hbs">
+                    <a class="tienda" href="/checkout">
                         <img src="src/shopping-card.png" alt="" class="shopping-card">
                     </a>
-                    <span class="carri">0</span>
+                    <span class="carri" id="carriuno">0</span>
                 </div>
             </div>
         </nav>
     </header>
     <section class="route">
-        <p>Homepage•ShoppingCart•Checkout</p>
+        <p><a class="route-home" href="/">Homepage</a>><a class="route-shopping" href="/">ShoppingCart</a>><a class="route-check" href="/checkout">Checkout</a></p>
     </section>
 
     <section class="form">
@@ -116,7 +116,7 @@
             </div>
         </div>
         <div class="cont-count">
-            <div class="login">
+           <!-- <div class="login">
                 <h1 class="loginTitle">LOGIN</h1>
                 <h2 class="registered">ALREADY REGISTERED?</h2>
                 <h3 class="log">Please log in below:</h3>
@@ -136,28 +136,31 @@
                         <span>*</span> Required Fields</h4>
                     <button class="loginbut">LOGIN</button>
                 </div>
-            </div>
-            <div class="divide"></div>
+            </div> -->
+            
             <div class="order">
                 <h1 class="orderTitle">YOUR ORDER CHECK</h1>
-                <h2 class="productsSubtitle">Products</h2>
+                <h2 class="productsSubtitle">Products in Your Cart:</h2>
                 <div class="prodOrder">
-                    <ul class="lista"></ul>
+                    <div class="divide"></div>
+                    <ul class="lista">
+                        
+                    </ul>
                 </div>
 
             </div>
             <div class="divide"></div>
             <div class="total">
-                <div class="subtotal-cont">
+               <!-- <div class="subtotal-cont">
                     <h2 class="subtotal">SUBTOTAL</h2>
                     <h3 class="subtotalPrice">$ 1.999.998.00</h3>
                 </div>
                 <div class="shipping-cont">
                     <h2 class="shipping">SHIPPING</h2>
                     <h3 class="shippingPrice">$ 00.00</h3>
-                </div>
+                </div> -->
                 <div class="order-total-cont">
-                    <h2 class="order-total">ORDER TOTAL</h2>
+                    <h2 class="order-total">TOTAL</h2>
                     <h3 class="order-totalPrice">$ 2.000.118.00</h3>
                 </div>
                 <div class="pay-cont">
@@ -166,10 +169,10 @@
             </div>
         </div>
     </section>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/headroom.js"></script>
-    <script src="js/cliente.js"></script>
-    <script src="js/Checkout.js"></script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/headroom.js"></script>
+    <script src="/js/cliente.js"></script>
+    <script src="/js/Checkout.js"></script>
 </body>
 
 </html>

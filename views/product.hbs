@@ -14,14 +14,14 @@
         <nav class="menu">
             <div class="logo">
                 <img src="/src/rog-strix.png" alt="ROG Strix">
-                <a href="#" class="btn-menu" id="btn-menu">
+                <a href="/" class="btn-menu" id="btn-menu">
                     <i class="icono fa fa-bars" aria-hidden="true">
                     </i>
                 </a>
             </div>
 
             <div class="enlaces" id="enlaces">
-                <a class="products" href="#">Products</a>
+                <a class="products" href="/">Products</a>
                 <a class="ROG" href="#">ROG</a>
                 <a class="Service" href="#">Service</a>
             </div>
@@ -34,9 +34,10 @@
                         </a>
 
                     </div>
-                    <a class="tienda" href="#">
+                    <a class="tienda" href="/checkout">
                         <img src="/src/shopping-card.png" alt="" class="shopping-card">
                     </a>
+                    <span class="carri" id="carriuno">0</span>
                 </div>
             </div>
         </nav>
@@ -48,11 +49,14 @@
 
     <section class="product">
         <div class="resume">
-            <div class="cont-photo-product">
-                <img class="photo-product" src="img/lista/ROG-strix-GTX1060-6gb.png" alt="">
+
+
+
+            <!--<div class="cont-photo-product">
+                <img class="photo-product" src="/img/lista/ROG-strix-GTX1060-6gb.png" alt="">
             </div>
 
-            <!-- <div class="description">
+             <div class="description">
                 <h1 class="name-product">
                     ROG STRIX GTX 1060 - 6Gb
                 </h1>
@@ -76,28 +80,28 @@
 
             <div class="list-products">
                 <div class="mostrar">
-                    <div class="tarjeta" data-id="{{this._id}}">
-                            <div class="imagen" style="background-image: url(/{{tarjetica.image}});"></div>
-                            <div class="descri">
-                                <p class="nameDesc">
-                                    {{tarjetica.name}}
-                                </p>
-                                <p class="vidMem">
-                                    <span>Video Memory:</span> {{tarjetica.memory}}
-                                </p>
-                                <p class="gpuDesc">
-                                    <span>GPU:</span> {{tarjetica.gpu}}
-                                </p>
-                                <p class="priceDesc">
-                                    ${{tarjetica.price}}
-                                </p>
+                    <div class="tarjetas" data-id="{{this._id}}">
+                        <div class="imagen" style="background-image: url(/{{tarjetica.image}});"></div>
+                        <div class="descri">
+                            <p class="nameDesc">
+                                {{tarjetica.name}}
+                            </p>
+                            <p class="vidMem">
+                                <span>Video Memory:</span> {{tarjetica.memory}}
+                            </p>
+                            <p class="gpuDesc">
+                                <span>GPU:</span> {{tarjetica.gpu}}
+                            </p>
+                            <p class="priceDesc">
+                                ${{tarjetica.price}}
+                            </p>
 
-                            </div>
-                            <div class="boton" align="center">
-                                <a href="">
-                                    <button class="add">Add To Cart</button>
-                                </a>
-                            </div>
+                        </div>
+                        <div class="boton" align="center">
+                            <a href="">
+                                <button class="add">Add To Cart</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,7 +136,7 @@
     </section>
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/headroom.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="/js/cliente.js"></script>
 </body>
 
 </html>
