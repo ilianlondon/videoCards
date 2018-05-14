@@ -281,7 +281,7 @@ header .menu {
             font-weight: 600;
         }
         #range {
-            width: 66%;
+            width: 38%;
         }
         .input[type=range] {
             -webkit-appearance: none;
@@ -645,7 +645,7 @@ header .menu {
                     display: flex;
                     flex-direction: row;
                     flex-wrap: nowrap;
-                    justify-content: space-around;
+                    justify-content: center;
                     align-content: stretch;
                     align-items: center;
                     a {
@@ -669,6 +669,19 @@ header .menu {
             transform: scale(1.1);
         }
     }
+}
+.container{
+    a{
+        text-decoration: none;
+    }
+   
+}
+.mostrar{
+    a{
+        text-decoration: none;
+        color: $darkGray;
+    }
+   
 }
 
 ul,
@@ -1215,7 +1228,7 @@ textarea:focus {
     font-family: $fuente;
     width: 100%;
     padding: 3% 0;
-    .resume {
+    .tarjeta-indiv {
         width: 100%;
         height: 30vh;
         .cont-photo-product {

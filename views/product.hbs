@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ProductName</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header id="header">
         <nav class="menu">
             <div class="logo">
-                <img src="src/rog-strix.png" alt="ROG Strix">
+                <img src="/src/rog-strix.png" alt="ROG Strix">
                 <a href="#" class="btn-menu" id="btn-menu">
                     <i class="icono fa fa-bars" aria-hidden="true">
                     </i>
@@ -30,12 +30,12 @@
                     <div class="buscador">
                         <input type="text" class="search" name="search" id="" placeholder="Search...">
                         <a class="recuadro-lupa" href="#">
-                            <img class="icon-lupa" src="src/lupa.png" alt="">
+                            <img class="icon-lupa" src="/src/lupa.png" alt="">
                         </a>
 
                     </div>
                     <a class="tienda" href="#">
-                        <img src="src/shopping-card.png" alt="" class="shopping-card">
+                        <img src="/src/shopping-card.png" alt="" class="shopping-card">
                     </a>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                 <img class="photo-product" src="img/lista/ROG-strix-GTX1060-6gb.png" alt="">
             </div>
 
-            <div class="description">
+            <!-- <div class="description">
                 <h1 class="name-product">
                     ROG STRIX GTX 1060 - 6Gb
                 </h1>
@@ -72,8 +72,37 @@
                 <button class="addToCart">
                     Add To Cart
                 </button>
+            </div> -->
+
+            <div class="list-products">
+                <div class="mostrar">
+                    <div class="tarjeta" data-id="{{this._id}}">
+                            <div class="imagen" style="background-image: url(/{{tarjetica.image}});"></div>
+                            <div class="descri">
+                                <p class="nameDesc">
+                                    {{tarjetica.name}}
+                                </p>
+                                <p class="vidMem">
+                                    <span>Video Memory:</span> {{tarjetica.memory}}
+                                </p>
+                                <p class="gpuDesc">
+                                    <span>GPU:</span> {{tarjetica.gpu}}
+                                </p>
+                                <p class="priceDesc">
+                                    ${{tarjetica.price}}
+                                </p>
+
+                            </div>
+                            <div class="boton" align="center">
+                                <a href="">
+                                    <button class="add">Add To Cart</button>
+                                </a>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
+
 
         <!--
             <div class="cont-specifications">
@@ -87,7 +116,7 @@
          -->
         <div class="divide-warranty"></div>
         <div class="warranty">
-            
+
             <h1 class="warranty-support">Warranty & Support</h1>
             <p class="warranty-description">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -101,9 +130,9 @@
             </p>
         </div>
     </section>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/headroom.js"></script>
-    <script src="js/index.js"></script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/headroom.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>

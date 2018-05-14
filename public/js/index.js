@@ -41,3 +41,12 @@ $(function () {
         }
     });
 });
+
+// filtro con min y max
+console.log('hola cliente');
+var slider = document.querySelector('#slider');
+var sliderMax = document.querySelector('#sliderUno');
+document.querySelector('.minMax').addEventListener('click', function(e){
+    e.preventDefault();
+    location.href = '/?min=' + slider.value + '&max='+sliderMax.value;
+});

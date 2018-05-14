@@ -49,30 +49,40 @@
             <h2 class="filterBy">FILTER BY</h2>
             <div class="pricerange-cont">
                 <h3 class="price">Price</h3>
-                <input type="range" name="" id="range" min="0" max="10000000">
-                <div class="input-ranges-cont">
-                    <input type="text" class="rangeMin" name="rango minimo" id="" placeholder="$ Min">
-                    <span>to</span>
-                    <input type="text" class="rangeMax" name="rango maximo" id="" placeholder="$ Max">
-                </div>
+                <input type="range" name="" id="slider" min="0" max="600">
+                <input type="range" name="" id="sliderUno" min="601" max="1200">
+                <button class="minMax">Apply</button>
             </div>
             <div class="category-cont">
                 <h3 class="category">Category</h3>
 
-                <label class="container">Todas
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                    
-                <label class="container">AMD Series
+                <label class="container">
+                    <a href="/">
+                        Todas
+                    </a>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">NVIDIA Series
+
+                <label class="container">
+                    <a href="/?category=AMD Series">
+                        AMD Series
+                    </a>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">ROG - Republic Of Gamers
+                <label class="container">
+                    <a href="/?category=NVIDIA Series">
+                        NVIDIA Series
+                    </a>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <a href="/?category=ROG - Republic Of Gamers">
+                        ROG - Republic Of Gamers
+                    </a>
+
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
@@ -81,19 +91,17 @@
             </div>
             <div class="gpu-cont">
                 <h3 class="gpu">GPU</h3>
-                <label class="container">Todas
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Radeon™ RX VEGA Series
+                <label class="container">
+                    <a href="/?gpu=Radeon RX VEGA Series">
+                        Radeon™ RX VEGA Series
+                    </a>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Radeon™ RX 500 Series
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Radeon™ R7 Series
+                <label class="container">
+                    <a href="/?gpu=Radeon RX 500 Series">
+                        Radeon™ RX 500 Series
+                    </a>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
@@ -112,64 +120,57 @@
             </div>
             <div class="memory-cont">
                 <h3 class="memory">Video Memory</h3>
-                <label class="container">Todas
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container">Above 8 Gb
+                <label class="container">
+                    <a href="/?memory=11Gb">
+                        Above 8 Gb
+                    </a>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">8 Gb
+                <label class="container">
+                    <a href="/?memory=8Gb">
+                        8 Gb
+                    </a>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">6 Gb
+                <label class="container">
+                    <a href="/?memory=6Gb">
+                        6 Gb
+                    </a>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">4 Gb
+                <label class="container">
+                    <a href="/?memory=4Gb">
+                        4 Gb
+                    </a>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">2 Gb
+                <label class="container">
+                    <a href="/?memory=2Gb">
+                        2 Gb
+                    </a>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
+                <span class="carri">0</span>
             </div>
         </div>
         <div class="content-products">
-            <div class="sortby">
-                <div class="tit-sortby">
-                    <h4>Sort by</h4>
-                </div>
-                <div class="sort-select">
-                    <ul class="nav">
-                        <li>
-                            <a class="sortbytit" href="">Sort by
-                                <img src="src/down.png" alt="">
-                            </a>
-                            <ul>
-                                <li>
-                                    <a class="byprice" href="">Price: Low - High</a>
-                                </li>
-                                <li>
-                                    <a class="byprice" href="">Price: High - Low</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="list-products">
                 <div class="mostrar">
                     {{#each videocards}}
                     <div class="tarjeta" data-id="{{this._id}}">
+
                         <div class="imagen" style="background-image: url({{image}});"></div>
                         <div class="descri">
-                            <p class="nameDesc">
-                                {{name}}
-                            </p>
+                            <a href="/product/{{name}}">
+                                <p class="nameDesc">
+                                    {{name}}
+                                </p>
+                            </a>
                             <p class="vidMem">
                                 <span>Video Memory:</span> {{memory}}
                             </p>
@@ -182,10 +183,9 @@
 
                         </div>
                         <div class="boton" align="center">
-                           <a href="">
-                               <button class="add">Add To Cart</button>
-                           </a> 
+                                <button class="add">Add To Cart</button>
                         </div>
+
                     </div>
                     {{/each}}
                 </div>
@@ -196,6 +196,9 @@
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/headroom.js"></script>
+
+<script src="js/cliente.js"></script>
+<script src="js/productos.js"></script>
 <script src="js/index.js"></script>
 
 </html>
