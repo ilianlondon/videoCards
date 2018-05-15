@@ -43,7 +43,10 @@
         </nav>
     </header>
     <section class="route">
-        <p><a class="route-home" href="/">Homepage</a>><a class="route-products" href="/">Products</a></p>
+        <p>
+            <a class="route-home" href="/">Homepage</a>>
+            <a class="route-products" href="/">Products</a>
+        </p>
     </section>
     <section class="productos">
         <div class="filter">
@@ -188,7 +191,7 @@
 
                         </div>
                         <div class="boton" align="center">
-                            <button class="add">Add To Cart</button>
+                            <button onclick="sweet()" class="add">Add To Cart</button>
                         </div>
 
                     </div>
@@ -199,9 +202,20 @@
         </div>
     </section>
 </body>
+<script>
+    function sweet() {
+        swal({
+            title: "Added to Cart",
+            text: "press 'OK' to continue buying",
+            //imageUrl: 'https://s3-ap-southeast-1.amazonaws.com/gw-thinksaas-deploy/website/images/checkmark-gif.gif'
+            //imageUrl: 'https://i.stack.imgur.com/7VozH.gif'
+            imageUrl: 'http://www.yerha.com/pages/img/chatsim/shop.gif'
+        });
+    }
+</script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/headroom.js"></script>
-
+<script src="/js/sweet.js"></script>
 <script src="js/cliente.js"></script>
 <script src="js/productos.js"></script>
 <script src="js/index.js"></script>

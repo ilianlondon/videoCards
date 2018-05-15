@@ -50,3 +50,5 @@ document.querySelector('.minMax').addEventListener('click', function(e){
     e.preventDefault();
     location.href = '/?min=' + slider.value + '&max='+sliderMax.value;
 });
+
+

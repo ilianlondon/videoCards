@@ -43,7 +43,11 @@
         </nav>
     </header>
     <section class="route">
-        <p><a class="route-home" href="/">Homepage</a>><a class="route-shopping" href="/">ShoppingCart</a>><a class="route-check" href="/checkout">Checkout</a></p>
+        <p>
+            <a class="route-home" href="/">Homepage</a>>
+            <a class="route-shopping" href="/">ShoppingCart</a>>
+            <a class="route-check" href="/checkout">Checkout</a>
+        </p>
     </section>
 
     <section class="form">
@@ -116,7 +120,7 @@
             </div>
         </div>
         <div class="cont-count">
-           <!-- <div class="login">
+            <!-- <div class="login">
                 <h1 class="loginTitle">LOGIN</h1>
                 <h2 class="registered">ALREADY REGISTERED?</h2>
                 <h3 class="log">Please log in below:</h3>
@@ -137,21 +141,21 @@
                     <button class="loginbut">LOGIN</button>
                 </div>
             </div> -->
-            
+
             <div class="order">
                 <h1 class="orderTitle">YOUR ORDER CHECK</h1>
                 <h2 class="productsSubtitle">Products in Your Cart:</h2>
                 <div class="prodOrder">
                     <div class="divide"></div>
                     <ul class="lista">
-                        
+
                     </ul>
                 </div>
 
             </div>
             <div class="divide"></div>
             <div class="total">
-               <!-- <div class="subtotal-cont">
+                <!-- <div class="subtotal-cont">
                     <h2 class="subtotal">SUBTOTAL</h2>
                     <h3 class="subtotalPrice">$ 1.999.998.00</h3>
                 </div>
@@ -161,17 +165,29 @@
                 </div> -->
                 <div class="order-total-cont">
                     <h2 class="order-total">TOTAL</h2>
-                    <h3 class="order-totalPrice">$ 2.000.118.00</h3>
+                    <h3 class="order-totalPrice">$ Suma a Pagar</h3>
                 </div>
                 <div class="pay-cont">
-                    <button class="pay">PAY NOW</button>
+                    <button onclick="sweet()" class="pay">PAY NOW</button>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        function sweet() {
+            swal({
+		title: "Thanks for buying!",
+		text: "press 'OK' to continue buying",
+        //imageUrl: 'https://s3-ap-southeast-1.amazonaws.com/gw-thinksaas-deploy/website/images/checkmark-gif.gif'
+		imageUrl: 'https://i.stack.imgur.com/7VozH.gif'
+        //imageUrl: 'http://www.yerha.com/pages/img/chatsim/shop.gif'
+	});
+        }
+    </script>
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/headroom.js"></script>
     <script src="/js/cliente.js"></script>
+    <script src="/js/sweet.js"></script>
     <script src="/js/Checkout.js"></script>
 </body>
 

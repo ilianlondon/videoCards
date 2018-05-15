@@ -44,99 +44,62 @@
     </header>
 
     <section class="route">
-        <p><a class="route-home" href="/">Homepage</a>><a class="route-products" href="/">Products</a>><a class="route-product" href="/product">Product</a></p>
+        <p>
+            <a class="route-home" href="/">Homepage</a>>
+            <a class="route-products" href="/">Products</a>>
+            <a class="route-product" href="/product">Product</a>
+        </p>
     </section>
 
     <section class="product">
-        <div class="resume">
-
-
-
-            <!--<div class="cont-photo-product">
-                <img class="photo-product" src="/img/lista/ROG-strix-GTX1060-6gb.png" alt="">
+        <div class="tarjeta-indiv" data-id="{{this._id}}">
+            <div class="cont-photo-product">
+                <img src="/{{tarjetica.image}}" alt="ImagenProductoIndividual">
             </div>
-
-             <div class="description">
-                <h1 class="name-product">
-                    ROG STRIX GTX 1060 - 6Gb
-                </h1>
-                <h2 class="ref-product">SKU003KJU
-                </h2>
-                <h3 class="price-individual">
-                    $ Precio del producto
-                </h3>
-
-                <p class="description-resume">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem veniam deserunt, consequatur recusandae aut vero
-                    quis molestias saepe, sit ex quas velit voluptates hic cupiditate iusto? Illo, obcaecati itaque. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur laborum non, velit alias pariatur
-                    laboriosam ullam deleniti, qui atque quas repellat impedit architecto dolore ea! Mollitia dolore autem
-                    animi?
+            <div class="description">
+                <p class="name-product">
+                    {{tarjetica.name}}
                 </p>
-                <button class="addToCart">
-                    Add To Cart
-                </button>
-            </div> -->
+                <p class="memory-product">
+                    <span>Video Memory:</span> {{tarjetica.memory}}
+                </p>
+                <p class="gpu-product">
+                    <span>GPU:</span> {{tarjetica.gpu}}
+                </p>
+                <p class="price-individual">
+                    ${{tarjetica.price}}
+                </p>
 
-            <div class="list-products">
-                <div class="mostrar">
-                    <div class="tarjetas" data-id="{{this._id}}">
-                        <div class="imagen" style="background-image: url(/{{tarjetica.image}});"></div>
-                        <div class="descri">
-                            <p class="nameDesc">
-                                {{tarjetica.name}}
-                            </p>
-                            <p class="vidMem">
-                                <span>Video Memory:</span> {{tarjetica.memory}}
-                            </p>
-                            <p class="gpuDesc">
-                                <span>GPU:</span> {{tarjetica.gpu}}
-                            </p>
-                            <p class="priceDesc">
-                                ${{tarjetica.price}}
-                            </p>
-
-                        </div>
-                        <div class="boton" align="center">
-                            <a href="">
-                                <button class="add">Add To Cart</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="boton" align="center">
+                <button onclick="sweet()" class="add">Add To Cart</button>
             </div>
         </div>
 
-
-        <!--
-            <div class="cont-specifications">
-            <h1 class="specificationsTitle">Specifications</h1>
-            <h2 class="technicalDetails">Technical Details
-            </h2>
-            <div class="table-specifications">
-
-            </div>
-        </div>
-         -->
         <div class="divide-warranty"></div>
         <div class="warranty">
 
             <h1 class="warranty-support">Warranty & Support</h1>
             <p class="warranty-description">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-                esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem
-                ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                lobortis nisl ut aliquip ex ea commodo consequat.
+                ASUS warrants Graphics Card (Products) excluding (free) bundled accessories that may be delivered together with the Product, to be free from defects in materials and workmanship for a period of 36 month(s) depending on your specific model. If the product fails during normal and proper use within the warranty period ASUS will, subject to exclusions and at ASUS’ discretion, repair or replace the product or components. Any products and or components repaired or replaced by ASUS will be under warranty for the remaining period of warranty or for no less than 3 months. This warranty applies only to products that are new on the date of purchase from an authorized ASUS product reseller. The Graphics Card product line is covered under a parts and labor repair or buffer exchange warranty for hardware, manufacturing, and/or power related issues, excluding power surges and/or electrical spikes. This ASUS warranty does not include failure caused by improper installation, operation, cleaning or maintenance, accident, damage, misuse, abuse, non- ASUS modifications to the product, any software programs, normal wear and tear or any other event, act, default or omission outside ASUS’ control.
             </p>
         </div>
     </section>
+    <script>
+        function sweet() {
+            swal({
+                title: "Added to Cart",
+                text: "press 'OK' to continue buying",
+                //imageUrl: 'https://s3-ap-southeast-1.amazonaws.com/gw-thinksaas-deploy/website/images/checkmark-gif.gif'
+                //imageUrl: 'https://i.stack.imgur.com/7VozH.gif'
+                imageUrl: 'http://www.yerha.com/pages/img/chatsim/shop.gif'
+            });
+        }
+    </script>
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/headroom.js"></script>
     <script src="/js/cliente.js"></script>
+    <script src="/js/sweet.js"></script>
 </body>
 
 </html>
