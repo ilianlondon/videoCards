@@ -305,6 +305,28 @@ header .menu {
     font-family: $fuente;
 }
 
+.cont-num-slider{
+    //width: 100%;
+    #demo {
+        font-family: $fuente;
+        color: $red;
+        top: 0px;
+        left: 165px;
+        font-weight: 600;
+        position: absolute;
+    }
+    #demoDos {
+        font-family: $fuente;
+        color: $red;
+        top: 0px;
+        left: 290px;
+        font-weight: 600;
+        
+        position: absolute;
+    }    
+}
+
+
 .filter {
     width: 30%;
     position: fixed;
@@ -345,6 +367,8 @@ header .menu {
                 flex-wrap: wrap;
                 width: 100%;
                 text-align: center;
+                position: relative;
+                
                 #range {
                     width: 38%;
                 }
@@ -666,7 +690,7 @@ header .menu {
 }
 
 .content-products {
-    width: 70%;
+    width: 60%;
     right: 0;
     float: right; //background: greenyellow;
     //height: ;

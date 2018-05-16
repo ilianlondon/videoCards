@@ -3,7 +3,7 @@
             "name": "ROG STRIX GTX 1080TI",
             "image": "img/lista/ROG-strix-GTX1080-11gb.png",
             "category": "NVIDIA Series",
-            "gpu": "GeForce 1000 Series",
+            "gpu": "GeForce 1080 Series",
             "memory": "11Gb",
             "price": 1060,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem veniam deserunt, consequatur recusandae aut vero quis molestias saepe, sit ex quas velit voluptates hic cupiditate iusto? Illo, obcaecati itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur laborum non, velit alias pariatu laboriosam ullam deleniti, qui atque quas repellat impedit architecto dolore ea! Mollitia dolore autem animi? </br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem veniam deserunt, consequatur recusandae aut vero quis molestias saepe, sit ex quas velit voluptates hic cupiditate iusto? Illo, obcaecati itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur laborum non, velit alias pariatu laboriosam ullam deleniti, qui atque quas repellat impedit architecto dolore ea! Mollitia dolore autem animi? "
@@ -12,7 +12,7 @@
             "name": "ROG STRIX GTX 1060",
             "image": "img/lista/ROG-strix-GTX1060-6gb.png",
             "category": "NVIDIA Series",
-            "gpu": "GeForce 1000 Series",
+            "gpu": "GeForce 1060 Series",
             "memory": "6Gb",
             "price": 380
         },
@@ -52,7 +52,7 @@
             "name": "ASUS Phoenix GeForce GTX 1050",
             "image": "img/lista/ASUS-Phoenix-GTX1050-2gb.png",
             "category": "NVIDIA Series",
-            "gpu": "GeForce 1000 Series",
+            "gpu": "GeForce 1050 Series",
             "memory": "2Gb",
             "price": 193
         },
@@ -60,7 +60,7 @@
             "name": "ASUS Expedition GeForce GTX 1050TI",
             "image": "img/lista/ASUS-Expedition-GTX1050-4gb.png",
             "category": "NVIDIA Series",
-            "gpu": "GeForce 1000 Series",
+            "gpu": "GeForce 1050 Series",
             "memory": "4Gb",
             "price": 530
         },
@@ -68,7 +68,7 @@
             "name": "ROG-STRIX-GTX1080TI",
             "image": "img/lista/ASUS-Turbo-GeForce-GTX1060-6gb.png",
             "category": "NVIDIA Series",
-            "gpu": "GeForce 1000 Series",
+            "gpu": "GeForce 1060 Series",
             "memory": "6Gb",
             "price": 830
         }

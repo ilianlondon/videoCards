@@ -287,6 +287,24 @@ header .menu .logo img {
   font-family: "Montserrat", sans-serif;
 }
 
+.cont-num-slider #demo {
+  font-family: "Montserrat", sans-serif;
+  color: #CC0000;
+  top: 0px;
+  left: 165px;
+  font-weight: 600;
+  position: absolute;
+}
+
+.cont-num-slider #demoDos {
+  font-family: "Montserrat", sans-serif;
+  color: #CC0000;
+  top: 0px;
+  left: 290px;
+  font-weight: 600;
+  position: absolute;
+}
+
 .filter {
   width: 30%;
   position: fixed;
@@ -335,6 +353,7 @@ header .menu .logo img {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
 .filter .pricerange-cont .cont-slider-apply .cont-slider #range {
@@ -701,7 +720,7 @@ header .menu .logo img {
 }
 
 .content-products {
-  width: 70%;
+  width: 60%;
   right: 0;
   float: right;
 }

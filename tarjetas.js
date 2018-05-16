@@ -71,13 +71,15 @@ app.get('/product', (req, res) => {
 })
 
 app.get('/product/:nombre', (req, res) => {
+    //console.log(result[0]);
     db.collection('videocards').find({
         name: req.params.name
     }).toArray((err, result) => res.render('product', {
         tarjetica: result[0]
+        
     }))
+    
 });
-
 
 app.get('/productosPorId', (req, res) => {
     var arreglo = req.query.id.split(',');
